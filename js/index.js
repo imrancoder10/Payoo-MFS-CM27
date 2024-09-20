@@ -9,10 +9,12 @@ document.getElementById('login-btn').addEventListener('click', function (event) 
     const inputPhoneNumber = document.getElementById('input-phone-number').value;
     const inputPinNumber = document.getElementById('input-pin-number').value;
 
-    if(inputPhoneNumber==='5' && inputPinNumber==='1234'){
-        console.log('You are logged in.');
-    }
-    else{
+    // step - 4: validate phone and pin
+    // this is temporary. you should do like this............
+    if (inputPhoneNumber === '5' && inputPinNumber === '1234') {
+        // step - 5: allow user to use website.
+        window.location.href = '/home.html';
+    } else {
         alert('Wrong phone number or pin');
     }
 });
